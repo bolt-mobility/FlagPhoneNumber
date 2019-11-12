@@ -15,6 +15,9 @@ class FPNCountryView: NibLoadingView {
 	}
 
 	func setup(_ country: FPNCountry) {
+        countryCodeLabel.textColor = UIColor.white
+        countryNameLabel.textColor = UIColor.white
+        
 		flagImageView.image = country.flag
 		countryCodeLabel.text = country.phoneCode
 		countryNameLabel.text = country.name
